@@ -259,12 +259,61 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #FFFFFF;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border: 1px solid #E6E6E6;
+    position: relative;
+}
+
+.featured-products .featured-items .featured-product:hover {
+    background-color: #2C3E50;
+}
+
+.featured-products .featured-items .featured-product:hover img {
+    background-color: #FFFFFF;
+}
+
+.featured-products .featured-items .featured-product:hover .info p {
+    color: #FFFFFF;
+}
+
+.featured-products .featured-items .featured-product:hover .info {
+    border-color: rgba(230, 230, 230, 0.1);
+}
+
+.featured-products .featured-items .featured-product:hover .info p:last-of-type {
+    color: #FFFFFF;
+}
+
+.featured-products .featured-items .featured-product:hover .butt button:first-of-type {
+    background-color: #1ABC9C;
+}
+
+.featured-products .featured-items .featured-product:hover .butt button:last-of-type {
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+}
+
+.featured-products .featured-items .featured-product::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 268px;
     border-radius: 20px;
+    top: -1px;
+    left: -1px;
+    height: 370px;
+    border: 1px solid #FFFFFF;
+    border-bottom: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .featured-products .featured-items .featured-product .info {
-    padding: 20px;
+    padding: 11px 20px;
     border: 1px solid #E6E6E6;
+    border-left: none;
+    border-right: none;
 }
 
 .featured-products .featured-items .featured-product .info p {
@@ -291,7 +340,7 @@ body {
     line-height: 33px;
 }
 
-.featured-products .featured-items .featured-product .info button {
+.featured-products .featured-items .featured-product .butt button {
     background-color: #A1B1BC;
     border-radius: 5px;
     border: none;
@@ -303,12 +352,31 @@ body {
     padding: 5px;
 }
 
-.featured-products .featured-items .featured-product .info button img:first-of-type {
+.featured-products .featured-items .featured-product .butt {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.featured-products .featured-items .featured-product .butt button:first-of-type {
+    margin-right: 13px;
+}
+
+.featured-products .featured-items .featured-product .butt button span {
+    padding: 5px;
+    position: relative;
+    top: -2px;
+}
+
+.featured-products .featured-items .featured-product .butt button img:first-of-type {
     width: 14px;
     height: 13px;
 }
 
-.featured-products .featured-items .featured-product .info button img:last-of-type {
+.featured-products .featured-items .featured-product .butt button img:last-of-type {
     width: 12px;
     height: 14px;
+}
+
+.butt {
+    padding: 20px;
 }
