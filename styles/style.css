@@ -3,13 +3,10 @@
     margin: 0;
 }
 
-body {
-    overflow-x: hidden;
-}
-
 .main {
     display: grid;
     grid-template-rows: 122px 783px 90px 745px 290px 1121px 1377px 800px 673px 528px 300px;
+    grid-template-columns: 100%;
     grid-template-areas: "menu" "slider" "blank" "featured-products" "purchase" "view" "recent-products" "recent-news" "slider2" "about" "customers";
 }
 
