@@ -738,8 +738,8 @@
 }
 
 .recent-products .recent-items .recent-product .butt {
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
 }
 
 .recent-products .recent-items .recent-product .butt button:first-of-type {
@@ -858,24 +858,38 @@
     background-color: #2C3E50;
 }
 
-/*
-.view-item:hover .view-img {
-    background-color: #1ABC9C;
+.recent-products .recent-items .recent-product.back:hover .info {
+    background-color: #FFFFFF;
+    border-color: #E6E6E6;
 }
 
-.view-item .view-img .overlay {
-    position: relative;
-    top: -205px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    display: none;
-    background-color: #1ABC9C;
+.recent-products .recent-items .recent-product.back:hover .butt {
+    background-color: #FFFFFF;
+    border-color: #E6E6E6;
 }
 
-.view-item:hover .view-img .overlay {
-    display: block;
+.recent-products .recent-items .recent-product.back:hover .info p:first-of-type {
+    color: #2C3E50;
 }
-*/
+
+.recent-products .recent-items .recent-product.back:hover .info p:last-of-type {
+    color: #2C3E50;
+}
+
+.recent-products .recent-items .recent-product.back:hover .butt button:first-of-type {
+    background-color: #A1B1BC;
+}
+
+.recent-products .recent-items .recent-product.back:hover .butt button:last-of-type {
+    background-color: #A1B1BC;
+    border: 1px solid #E6E6E6;
+}
+
+.recent-products .recent-items .recent-product.back .info {
+    padding-bottom: 9px;
+}
+
+.recent-products .recent-items .recent-product.back .butt {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
