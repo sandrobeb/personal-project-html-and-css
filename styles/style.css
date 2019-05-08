@@ -454,6 +454,7 @@
     grid-template-rows: 600px 455px;
     grid-template-columns: repeat(3, 383px);
     grid-gap: 10px;
+    margin-bottom: 50px;
 }
 
 .main-view {
@@ -592,7 +593,7 @@
 .recent-products {
     display: grid;
     grid-template-rows: 44px 562px 562px;
-    background-color: #ECF0F1;
+    background-color: #FFFFFF;
 }
 
 .recent-products .header {
@@ -826,3 +827,55 @@
 .recent-products .recent-items .recent-product .recent-best img {
     padding: 17px 20px;
 }
+
+.recent-products .recent-items .recent-product .info .price {
+    display: flex;
+    flex-direction: row;
+}
+
+.recent-products .recent-items .recent-product .info .price span {
+    color: #FFFFFF;
+    width: 90px;
+    height: 30px;
+    font-size: 20px;
+    line-height: 33px;
+    background-color: #21C2F8;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.recent-products .recent-items .recent-product .info .price span:hover::after {
+    content: '+';
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 30px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    top: -33px;
+    left: 87px;
+    background-color: #2C3E50;
+}
+
+/*
+.view-item:hover .view-img {
+    background-color: #1ABC9C;
+}
+
+.view-item .view-img .overlay {
+    position: relative;
+    top: -205px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    background-color: #1ABC9C;
+}
+
+.view-item:hover .view-img .overlay {
+    display: block;
+}
+*/
