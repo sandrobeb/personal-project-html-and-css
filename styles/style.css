@@ -3,14 +3,14 @@
     margin: 0;
 }
 
-body{
+body {
     overflow-x: hidden;
-
 }
+
 .main {
     display: grid;
-    grid-template-rows: 122px 785px 90px 785px 290px 1121px 1270px 680px 673px 528px;
-    grid-template-areas: "menu" "slider" "blank" "featured-products" "purchase" "view" "recent-products" "recent-news" "slider2" "about";
+    grid-template-rows: 122px 785px 90px 785px 290px 1121px 1270px 680px 673px 528px 300px;
+    grid-template-areas: "menu" "slider" "blank" "featured-products" "purchase" "view" "recent-products" "recent-news" "slider2" "about" "customers";
 }
 
 .blank {
@@ -1464,4 +1464,40 @@ body{
     padding-left: 19px;
     width: 523px;
     padding-bottom: 10px;
+}
+
+.customers {
+    grid-area: customers;
+    background-color: #34495E;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapp {
+    width: 1171px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.customers .c {
+display: flex;
+flex-direction: column;
+padding-right: 170px;
+}
+
+.customers .c h1 {
+    font-size: 72px;
+    font-weight: 100;
+    color: #FFFFFF;
+}
+
+.customers .c p {
+    font-family: 'Lato';
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #FFFFFF;
+    position: relative;
+    right: -70px;
 }
